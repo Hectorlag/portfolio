@@ -187,9 +187,10 @@
 
 @media (max-width: 768px) {
     .dark-mode-toggle {
-        top: 15px;
-        right: 15px;
-        width: 45px;
-        height: 45px;
+        top: 15px;        /* Dentro del navbar blanco */
+        right: 60px;      /* Al lado del hamburguesa */
+        width: 30px;      /* Más pequeño para no competir */
+        height: 30px;
+        z-index: 1001;
     }
 }
