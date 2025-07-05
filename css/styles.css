@@ -1,0 +1,195 @@
+/* Portfolio Styles - Héctor Laguna */
+
+/* Custom Gradient Background */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Technology Badge Styles */
+.tech-badge {
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Card Animations */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth Scrolling */
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Typewriter Cursor Animation */
+.typewriter-cursor, .typewriter-cursor-2 {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Java Logo Animation */
+@keyframes javaAppear {
+    0% { 
+        opacity: 0; 
+        transform: scale(0) rotate(-360deg);
+    }
+    70% { 
+        transform: scale(1.3) rotate(20deg);
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes javaPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.java-pulse {
+    animation: javaPulse 3s ease-in-out infinite;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    z-index: 1000;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+    background: #3730a3;
+    transform: scale(1.1);
+}
+
+.dark-mode-toggle i {
+    font-size: 18px;
+}
+
+/* Dark Mode Styles - Simple */
+.dark {
+    background-color: #1a202c !important;
+    color: #f7fafc !important;
+}
+
+.dark nav {
+    background-color: #2d3748 !important;
+}
+
+.dark .bg-white {
+    background-color: #2d3748 !important;
+}
+
+.dark .bg-gray-50 {
+    background-color: #1a202c !important;
+}
+
+.dark .text-gray-800 {
+    color: #f7fafc !important;
+}
+
+.dark .text-gray-600 {
+    color: #e2e8f0 !important;
+}
+
+.dark .text-gray-700 {
+    color: #e2e8f0 !important;
+}
+
+.dark .text-gray-500 {
+    color: #a0aec0 !important;
+}
+
+.dark .text-gray-400 {
+    color: #a0aec0 !important;
+}
+
+.dark .border-gray-200,
+.dark .border-gray-300,
+.dark .border-gray-100 {
+    border-color: #4a5568 !important;
+}
+
+.dark input,
+.dark textarea {
+    background-color: #4a5568 !important;
+    border-color: #718096 !important;
+    color: #f7fafc !important;
+}
+
+.dark input:focus,
+.dark textarea:focus {
+    border-color: #63b3ed !important;
+}
+
+.dark label {
+    color: #e2e8f0 !important;
+}
+
+.dark .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark footer {
+    background-color: #1a202c !important;
+}
+
+.dark .gradient-bg {
+    background: linear-gradient(135deg, #2b6cb0 0%, #553c9a 100%) !important;
+}
+
+.dark .dark-mode-toggle {
+    background: #ed8936 !important;
+}
+
+.dark .dark-mode-toggle:hover {
+    background: #dd6b20 !important;
+}
+
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        top: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
