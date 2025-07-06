@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="smooth-scroll theme-transition">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
@@ -20,7 +22,8 @@
                     <a href="#inicio" class="text-gray-600 hover:text-blue-600 transition duration-300">Inicio</a>
                     <a href="#sobre-mi" class="text-gray-600 hover:text-blue-600 transition duration-300">Sobre Mí</a>
                     <a href="#proyectos" class="text-gray-600 hover:text-blue-600 transition duration-300">Proyectos</a>
-                    <a href="#habilidades" class="text-gray-600 hover:text-blue-600 transition duration-300">Habilidades</a>
+                    <a href="#habilidades"
+                        class="text-gray-600 hover:text-blue-600 transition duration-300">Habilidades</a>
                     <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition duration-300">Contacto</a>
                 </div>
                 <button class="md:hidden text-gray-600" onclick="toggleMenu()">
@@ -49,7 +52,8 @@
     <section id="inicio" class="gradient-bg text-white min-h-screen flex items-center pt-16">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <div class="fade-in">
-                <img src="images/profile.jpg" alt="Héctor Laguna" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-lg">
+                <img src="images/profile.jpg" alt="Héctor Laguna"
+                    class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-lg">
                 <h1 class="text-5xl md:text-6xl font-bold mb-4">
                     <span id="typewriter-name"></span><span class="typewriter-cursor">|</span>
                 </h1>
@@ -58,17 +62,20 @@
                     <i id="java-logo" class="fab fa-java ml-3 text-4xl text-orange-400" style="opacity: 0;"></i>
                 </h2>
                 <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-50">
-                    Especializado en Spring Boot, APIs RESTful y Spring Security. 
+                    Especializado en Spring Boot, APIs RESTful y Spring Security.
                     Apasionado por crear soluciones robustas y escalables.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
-                    <a href="https://github.com/Hectorlag" target="_blank" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300 shadow-lg">
+                    <a href="https://github.com/Hectorlag" target="_blank"
+                        class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300 shadow-lg">
                         <i class="fab fa-github mr-2"></i>GitHub
                     </a>
-                    <a href="https://linkedin.com/in/hectorlaguna24/" target="_blank" class="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800 transition duration-300 shadow-lg">
+                    <a href="https://linkedin.com/in/hectorlaguna24/" target="_blank"
+                        class="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-800 transition duration-300 shadow-lg">
                         <i class="fab fa-linkedin mr-2"></i>LinkedIn
                     </a>
-                    <a href="assets/Cv_HéctorLaguna.pdf" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition duration-300 shadow-lg">
+                    <a href="assets/Cv_HéctorLaguna.pdf" target="_blank" rel="noopener noreferrer"
+                        class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition duration-300 shadow-lg">
                         <i class="fas fa-external-link-alt mr-2"></i>Ver CV
                     </a>
                 </div>
@@ -81,86 +88,231 @@
         </div>
     </section>
 
-    <!-- About Section -->
+<!-- About Section -->
     <section id="sobre-mi" class="py-12 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12 fade-in">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">Sobre Mí</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-12 items-start">
-                <div class="fade-in">
-                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Desarrollador Java Backend</h3>
-                        <p class="text-gray-700 mb-6 leading-relaxed">
-                            Graduado en Tecnicatura Universitaria en Programación por la UTN, con sólida formación en desarrollo backend 
-                            <span class="inline-block bg-red-100 text-red-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Java</span>. 
-                            Especializado en el ecosistema 
-                            <span class="inline-block bg-green-100 text-green-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Framework</span>, 
-                            incluyendo 
-                            <span class="inline-block bg-green-100 text-green-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Boot</span>, 
-                            <span class="inline-block bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Security</span>, 
-                            <span class="inline-block bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring MVC</span> y 
-                            <span class="inline-block bg-indigo-100 text-indigo-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Data JPA</span> 
-                            para el desarrollo de 
-                            <span class="inline-block bg-yellow-100 text-yellow-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">APIs RESTful</span> 
-                            robustas y escalables.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed">
-                            Experiencia trabajando con arquitectura en capas, implementando persistencia de datos con 
-                            <span class="inline-block bg-orange-100 text-orange-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Hibernate/JPA</span>, 
-                            autenticación y autorización con 
-                            <span class="inline-block bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">JWT</span>, 
-                            testing con 
-                            <span class="inline-block bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Postman</span>, 
-                            control de versiones con 
-                            <span class="inline-block bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Git/GitHub</span> y 
-                            metodologías ágiles como 
-                            <span class="inline-block bg-green-100 text-green-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Scrum</span>. 
-                        </p>
-                    </div>
-                </div>
+            <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Columna izquierda: Información personal -->
                 <div class="fade-in">
                     <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Desarrollador Java Backend</h3>
+                        <div class="flex-grow">
+                            <p class="text-gray-700 mb-6 leading-relaxed">
+                                Graduado en Tecnicatura Universitaria en Programación por la UTN, con sólida formación en desarrollo backend 
+                                <span class="inline-block bg-red-100 text-red-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Java</span>. 
+                                Especializado en el ecosistema 
+                                <span class="inline-block bg-green-100 text-green-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Framework</span>, 
+                                incluyendo 
+                                <span class="inline-block bg-green-100 text-green-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Boot</span>, 
+                                <span class="inline-block bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Security</span>, 
+                                <span class="inline-block bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring MVC</span> y 
+                                <span class="inline-block bg-indigo-100 text-indigo-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Spring Data JPA</span> 
+                                para el desarrollo de 
+                                <span class="inline-block bg-yellow-100 text-yellow-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">APIs RESTful</span> 
+                                robustas y escalables.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                Experiencia trabajando con arquitectura en capas, implementando persistencia de datos con 
+                                <span class="inline-block bg-orange-100 text-orange-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Hibernate/JPA</span>, 
+                                autenticación y autorización con 
+                                <span class="inline-block bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">JWT</span>, 
+                                testing con 
+                                <span class="inline-block bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Postman</span>, 
+                                control de versiones con 
+                                <span class="inline-block bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Git/GitHub</span> y 
+                                metodologías ágiles como 
+                                <span class="inline-block bg-green-100 text-green-800 px-1.5 py-0.5 rounded text-xs font-medium mx-0.5">Scrum</span>. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha: Certificaciones -->
+                <div class="fade-in">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col">
                         <h4 class="text-2xl font-semibold text-gray-800 mb-6">Certificaciones</h4>
-                        <div class="space-y-2 flex-grow">
-                            <div class="flex items-start group">
-                                <i class="fas fa-certificate text-blue-600 mr-4 mt-1 text-xl"></i>
-                                <div class="flex-1">
-                                    <a href="https://todocodeacademy.com/certificate/spring-security-mer/" target="_blank" rel="noopener noreferrer" class="block group-hover:text-blue-600 transition duration-300">
-                                        <p class="font-semibold text-gray-800 group-hover:text-blue-600">Spring Security</p>
-                                        <p class="text-sm text-gray-600">TodoCode Academy - Feb 2025</p>
-                                        <p class="text-xs text-blue-600 mt-1 opacity-0 group-hover:opacity-100 transition duration-300">
-                                            <i class="fas fa-external-link-alt mr-1"></i>Ver certificado
-                                        </p>
-                                    </a>
+                        
+                        <!-- Sección de certificados con UX mejorada -->
+                        <div class="space-y-3 flex-grow">
+                            <!-- Spring Security - VERIFICADO (Expandible) -->
+                            <div class="certificate-card bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-lg p-3 border border-blue-200 dark:border-blue-700 transition-all duration-300 hover:shadow-md cursor-pointer" 
+                                 onclick="toggleCertificatePreview('spring-security')">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start">
+                                        <div class="certificate-icon bg-blue-600 text-white w-10 h-10 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-shield-alt text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                                <h5 class="font-bold text-gray-800 dark:text-white text-sm">Spring Security</h5>
+                                                <span class="status-badge status-verified text-xs">
+                                                    <i class="fas fa-check-circle"></i>Verificado
+                                                </span>
+                                            </div>
+                                            <p class="text-xs text-gray-600 dark:text-gray-300 mb-1">TodoCode Academy • Feb 2025</p>
+                                            <div class="flex items-center text-xs text-blue-600 dark:text-blue-400">
+                                                <i class="fas fa-mouse-pointer mr-1"></i>
+                                                <span>Ver preview</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-1 ml-2">
+                                        <button onclick="event.stopPropagation(); window.open('https://todocodeacademy.com/certificate/spring-security-mer/', '_blank')" 
+                                                class="cert-btn bg-blue-600 text-white p-1.5 rounded hover:bg-blue-700 transition-colors" 
+                                                title="Abrir en nueva pestaña">
+                                            <i class="fas fa-external-link-alt text-xs"></i>
+                                        </button>
+                                        <i class="fas fa-chevron-down transform transition-transform duration-300 text-sm" id="chevron-spring-security"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Preview expandible -->
+                                <div id="preview-spring-security" class="certificate-preview hidden mt-3 border-t border-blue-200 dark:border-blue-600 pt-3">
+                                    <div class="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-inner">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h6 class="font-semibold text-gray-700 dark:text-gray-300 text-sm">Vista previa</h6>
+                                            <span class="text-xs text-gray-500 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
+                                                Oficial
+                                            </span>
+                                        </div>
+                                        <iframe src="https://todocodeacademy.com/certificate/spring-security-mer/" 
+                                                class="certificate-iframe w-full h-48 rounded"
+                                                title="Certificado Spring Security">
+                                        </iframe>
+                                        <div class="mt-2 flex justify-between items-center text-xs">
+                                            <span class="text-gray-600 dark:text-gray-400">
+                                                <i class="fas fa-calendar mr-1"></i>Feb 2025
+                                            </span>
+                                            <button onclick="copyToClipboard('https://todocodeacademy.com/certificate/spring-security-mer/')" 
+                                                    class="text-blue-600 hover:text-blue-800">
+                                                <i class="fas fa-copy mr-1"></i>Copiar
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex items-start group">
-                                <i class="fas fa-certificate text-green-600 mr-4 mt-1 text-xl"></i>
-                                <div class="flex-1">
-                                    <a href="https://todocodeacademy.com/certificate/v9o/" target="_blank" rel="noopener noreferrer" class="block group-hover:text-green-600 transition duration-300">
-                                        <p class="font-semibold text-gray-800 group-hover:text-green-600">Arquitectura de Microservicios</p>
-                                        <p class="text-sm text-gray-600">TodoCode Academy - 2024</p>
-                                        <p class="text-xs text-green-600 mt-1 opacity-0 group-hover:opacity-100 transition duration-300">
-                                            <i class="fas fa-external-link-alt mr-1"></i>Ver certificado
-                                        </p>
-                                    </a>
+
+                            <!-- Spring Boot - CON INFORMACIÓN ADICIONAL -->
+                            <div class="certificate-card bg-gradient-to-r from-orange-50 to-orange-100 dark:from-orange-900 dark:to-orange-800 rounded-lg p-3 border border-orange-200 dark:border-orange-700 transition-all duration-300 hover:shadow-md cursor-pointer" 
+                                 onclick="toggleCertificatePreview('spring-boot')">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start">
+                                        <div class="certificate-icon bg-orange-600 text-white w-10 h-10 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fab fa-java text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                                <h5 class="font-bold text-gray-800 dark:text-white text-sm">Spring Boot</h5>
+                                                <span class="status-badge status-chrome-optimized text-xs">
+                                                    <i class="fas fa-chrome"></i>Chrome
+                                                </span>
+                                            </div>
+                                            <p class="text-xs text-gray-600 dark:text-gray-300 mb-1">TodoCode Academy • 2023</p>
+                                            <div class="flex items-center text-xs text-orange-600 dark:text-orange-400">
+                                                <i class="fas fa-mouse-pointer mr-1"></i>
+                                                <span>Ver preview</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-1 ml-2">
+                                        <button onclick="event.stopPropagation(); handleCertificateClick('spring-boot', event)" 
+                                                class="cert-btn bg-orange-600 text-white p-1.5 rounded hover:bg-orange-700 transition-colors" 
+                                                title="Ver certificado">
+                                            <i class="fas fa-eye text-xs"></i>
+                                        </button>
+                                        <i class="fas fa-chevron-down transform transition-transform duration-300 text-sm" id="chevron-spring-boot"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Preview con información adicional -->
+                                <div id="preview-spring-boot" class="certificate-preview hidden mt-3 border-t border-orange-200 dark:border-orange-600 pt-3">
+                                    <div class="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-inner">
+                                        <div class="space-y-3">
+                                            <div>
+                                                <h6 class="font-semibold text-gray-700 dark:text-gray-300 mb-2 text-sm">Contenido del curso</h6>
+                                                <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
+                                                    <li><i class="fas fa-check text-green-500 mr-2"></i>Spring Boot Fundamentals</li>
+                                                    <li><i class="fas fa-check text-green-500 mr-2"></i>REST APIs Development</li>
+                                                    <li><i class="fas fa-check text-green-500 mr-2"></i>Data JPA Integration</li>
+                                                    <li><i class="fas fa-check text-green-500 mr-2"></i>Security Implementation</li>
+                                                </ul>
+                                            </div>
+                                            <div class="space-y-2">
+                                                <button onclick="handleCertificateClick('spring-boot', event)" 
+                                                        class="w-full bg-orange-600 text-white py-2 px-3 rounded text-xs hover:bg-orange-700 transition-colors">
+                                                    <i class="fas fa-external-link-alt mr-2"></i>Ver certificado
+                                                </button>
+                                                <button onclick="window.open('https://todocodeacademy.com/cursos/', '_blank')" 
+                                                        class="w-full bg-gray-600 text-white py-2 px-3 rounded text-xs hover:bg-gray-700 transition-colors">
+                                                    <i class="fas fa-graduation-cap mr-2"></i>Verificar en TodoCode
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex items-start group">
-                                <i class="fas fa-certificate text-orange-600 mr-4 mt-1 text-xl"></i>
-                                <div class="flex-1">
-                                    <a href="https://todocodeacademy.com/certificate/fen/" target="_blank" rel="noopener noreferrer" class="block group-hover:text-orange-600 transition duration-300">
-                                        <p class="font-semibold text-gray-800 group-hover:text-orange-600">Spring Boot</p>
-                                        <p class="text-sm text-gray-600">TodoCode Academy - 2023</p>
-                                        <p class="text-xs text-orange-600 mt-1 opacity-0 group-hover:opacity-100 transition duration-300">
-                                            <i class="fas fa-external-link-alt mr-1"></i>Ver certificado
-                                        </p>
-                                    </a>
+
+                            <!-- Microservicios - CON BADGE DESTACADO -->
+                            <div class="certificate-card bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900 dark:to-green-800 rounded-lg p-3 border border-green-200 dark:border-green-700 transition-all duration-300 hover:shadow-md cursor-pointer" 
+                                 onclick="toggleCertificatePreview('microservices')">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start">
+                                        <div class="certificate-icon bg-green-600 text-white w-10 h-10 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-cubes text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <div class="flex items-center gap-2 mb-1 flex-wrap">
+                                                <h5 class="font-bold text-gray-800 dark:text-white text-sm">Microservicios</h5>
+                                                <span class="status-badge status-advanced text-xs">
+                                                    <i class="fas fa-star"></i>Avanzado
+                                                </span>
+                                            </div>
+                                            <p class="text-xs text-gray-600 dark:text-gray-300 mb-1">TodoCode Academy • 2024</p>
+                                            <div class="flex items-center text-xs text-green-600 dark:text-green-400">
+                                                <i class="fas fa-mouse-pointer mr-1"></i>
+                                                <span>Ver preview</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-1 ml-2">
+                                        <button onclick="event.stopPropagation(); handleCertificateClick('microservices', event)" 
+                                                class="cert-btn bg-green-600 text-white p-1.5 rounded hover:bg-green-700 transition-colors" 
+                                                title="Ver certificado">
+                                            <i class="fas fa-eye text-xs"></i>
+                                        </button>
+                                        <i class="fas fa-chevron-down transform transition-transform duration-300 text-sm" id="chevron-microservices"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Preview expandible -->
+                                <div id="preview-microservices" class="certificate-preview hidden mt-3 border-t border-green-200 dark:border-green-600 pt-3">
+                                    <div class="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-inner">
+                                        <div class="text-center">
+                                            <i class="fas fa-award text-3xl text-green-600 mb-2"></i>
+                                            <h6 class="font-semibold text-gray-700 dark:text-gray-300 mb-1 text-sm">Certificación Avanzada</h6>
+                                            <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">
+                                                Sistemas distribuidos y escalables
+                                            </p>
+                                            <div class="flex justify-center space-x-2">
+                                                <button onclick="handleCertificateClick('microservices', event)" 
+                                                        class="bg-green-600 text-white py-1.5 px-3 rounded text-xs hover:bg-green-700 transition-colors">
+                                                    <i class="fas fa-external-link-alt mr-1"></i>Ver
+                                                </button>
+                                                <button onclick="copyToClipboard('https://todocodeacademy.com/certificate/v9o/')" 
+                                                        class="bg-gray-600 text-white py-1.5 px-3 rounded text-xs hover:bg-gray-700 transition-colors">
+                                                    <i class="fas fa-copy mr-1"></i>Copiar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="mt-4 pt-3 border-t border-gray-200">
                             <p class="text-sm text-gray-500 text-center">
                                 <i class="fas fa-graduation-cap mr-2"></i>
@@ -180,34 +332,47 @@
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">Proyectos Destacados</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
                 <p class="text-gray-600 max-w-2xl mx-auto">
-                    Aquí puedes ver algunos de mis proyectos más representativos, desarrollados con las mejores prácticas y tecnologías modernas.
+                    Aquí puedes ver algunos de mis proyectos más representativos, desarrollados con las mejores
+                    prácticas y tecnologías modernas.
                 </p>
             </div>
             <div class="grid md:grid-cols-2 gap-8 items-stretch">
                 <!-- Proyecto 1: Billetera Virtual -->
-                <div class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
-                    <img src="images/billetera-virtual.png" alt="Sistema de Billetera Virtual" class="w-full h-60 object-contain bg-gray-100 rounded-t-lg cursor-pointer hover:opacity-90 transition-opacity duration-300" onclick="openImageModal('images/billetera-virtual.png', 'Sistema de Billetera Virtual')">
+                <div
+                    class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
+                    <img src="images/billetera-virtual.png" alt="Sistema de Billetera Virtual"
+                        class="w-full h-60 object-contain bg-gray-100 rounded-t-lg cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                        onclick="openImageModal('images/billetera-virtual.png', 'Sistema de Billetera Virtual')">
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-3">Sistema de Billetera Virtual</h3>
                         <p class="text-gray-600 mb-4 flex-grow">
-                            Aplicación completa desarrollada en equipo utilizando metodología Scrum. Incluye transferencias, 
+                            Aplicación completa desarrollada en equipo utilizando metodología Scrum. Incluye
+                            transferencias,
                             gestión de saldo y seguridad robusta con autenticación y autorización.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Java</span>
-                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Spring Security</span>
-                            <span class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
-                            <span class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring
+                                Boot</span>
+                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Spring
+                                Security</span>
+                            <span
+                                class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            <span
+                                class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Tailwind
+                                CSS</span>
                         </div>
                         <div class="flex space-x-3 mt-auto">
-                            <a href="https://github.com/alkemyTech/CFITDF-JAVA-W2-Back-S1" target="_blank" class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
+                            <a href="https://github.com/alkemyTech/CFITDF-JAVA-W2-Back-S1" target="_blank"
+                                class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
                                 <i class="fab fa-github mr-2"></i>Backend
                             </a>
-                            <a href="https://github.com/alkemyTech/CFITDF-JAVA-W2-Front-S1" target="_blank" class="flex-1 bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            <a href="https://github.com/alkemyTech/CFITDF-JAVA-W2-Front-S1" target="_blank"
+                                class="flex-1 bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition duration-300">
                                 <i class="fab fa-github mr-2"></i>Frontend
                             </a>
-                            <a href="assets/videos/alkywallet_video.mp4" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300">
+                            <a href="assets/videos/alkywallet_video.mp4" target="_blank"
+                                class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300">
                                 <i class="fas fa-play mr-2"></i>Video Demo
                             </a>
                         </div>
@@ -215,8 +380,10 @@
                 </div>
 
                 <!-- Proyecto 2: Blog -->
-                <div class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
-                    <div class="w-full h-60 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                <div
+                    class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
+                    <div
+                        class="w-full h-60 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
                         <div class="text-center text-white">
                             <i class="fab fa-java text-6xl mb-4"></i>
                             <h4 class="text-2xl font-bold">Backend API</h4>
@@ -226,22 +393,32 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-3">API REST Blog Platform</h3>
                         <p class="text-gray-600 mb-4 flex-grow">
-                            Desarrollé una API backend completa para plataforma de blog implementando sistema de roles y permisos con Spring Security. 
-                            Implementé autenticación JWT, gestión de usuarios y CRUD completo para posts con validaciones robustas.
+                            Desarrollé una API backend completa para plataforma de blog implementando sistema de roles y
+                            permisos con Spring Security.
+                            Implementé autenticación JWT, gestión de usuarios y CRUD completo para posts con
+                            validaciones robustas.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Java</span>
-                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Spring Security</span>
-                            <span class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Hibernate</span>
-                            <span class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Postman</span>
+                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring
+                                Boot</span>
+                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Spring
+                                Security</span>
+                            <span
+                                class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Hibernate</span>
+                            <span
+                                class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            <span
+                                class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Postman</span>
                         </div>
                         <div class="flex space-x-3 mt-auto">
-                            <a href="https://github.com/Hectorlag/proyectblog" target="_blank" class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
+                            <a href="https://github.com/Hectorlag/proyectblog" target="_blank"
+                                class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
                                 <i class="fab fa-github mr-2"></i>Código
                             </a>
-                            <a href="https://www.linkedin.com/posts/hectorlaguna24_todocodeacademy-java-springsecurity-activity-7300261123465908227-RW-f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADJLblMBSgaRU7PqLt27r6G6kkR-GTFMksc" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                            <a href="https://www.linkedin.com/posts/hectorlaguna24_todocodeacademy-java-springsecurity-activity-7300261123465908227-RW-f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADJLblMBSgaRU7PqLt27r6G6kkR-GTFMksc"
+                                target="_blank"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
                                 <i class="fab fa-linkedin mr-2"></i>Video Demo
                             </a>
                         </div>
@@ -249,26 +426,37 @@
                 </div>
 
                 <!-- Proyecto 3: E-Commerce -->
-                <div class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
-                    <img src="images/ecommerce.jpg" alt="Aplicación E-Commerce" class="w-full h-60 object-contain bg-gray-100 rounded-t-lg cursor-pointer hover:opacity-90 transition-opacity duration-300" onclick="openImageModal('images/ecommerce.jpg', 'Aplicación E-Commerce')">
+                <div
+                    class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
+                    <img src="images/ecommerce.jpg" alt="Aplicación E-Commerce"
+                        class="w-full h-60 object-contain bg-gray-100 rounded-t-lg cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                        onclick="openImageModal('images/ecommerce.jpg', 'Aplicación E-Commerce')">
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-3">Aplicación E-Commerce</h3>
                         <p class="text-gray-600 mb-4 flex-grow">
-                            Desarrollé una aplicación web completa de e-commerce con gestión de productos, usuarios y carrito de compras. 
-                            Implementé navbar reutilizable, sistema de autenticación, búsqueda dinámica de productos y modal de confirmación para eliminar productos.
+                            Desarrollé una aplicación web completa de e-commerce con gestión de productos, usuarios y
+                            carrito de compras.
+                            Implementé navbar reutilizable, sistema de autenticación, búsqueda dinámica de productos y
+                            modal de confirmación para eliminar productos.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Java</span>
-                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
-                            <span class="tech-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Thymeleaf</span>
-                            <span class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
-                            <span class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring
+                                Boot</span>
+                            <span
+                                class="tech-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Thymeleaf</span>
+                            <span
+                                class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            <span
+                                class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
                         </div>
                         <div class="flex space-x-3 mt-auto">
-                            <a href="https://github.com/Hectorlag/ecommerce_java" target="_blank" class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
+                            <a href="https://github.com/Hectorlag/ecommerce_java" target="_blank"
+                                class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
                                 <i class="fab fa-github mr-2"></i>Código
                             </a>
-                            <a href="assets/videos/video_ecommerce.mp4" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300">
+                            <a href="assets/videos/video_ecommerce.mp4" target="_blank"
+                                class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300">
                                 <i class="fas fa-play mr-2"></i>Video Demo
                             </a>
                         </div>
@@ -276,26 +464,36 @@
                 </div>
 
                 <!-- Proyecto 4: Sistema de Reparaciones - ACTUALIZADO -->
-                <div class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
-                    <img src="images/dashboard_electromic.png" alt="Sistema de Reparaciones Electrónicas" class="w-full h-60 object-contain bg-gray-100 rounded-t-lg cursor-pointer hover:opacity-90 transition-opacity duration-300" onclick="openImageModal('images/dashboard_electromic.png', 'Sistema de Reparaciones Electrónicas')">
+                <div
+                    class="project-card bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden fade-in flex flex-col h-full">
+                    <img src="images/dashboard_electromic.png" alt="Sistema de Reparaciones Electrónicas"
+                        class="w-full h-60 object-contain bg-gray-100 rounded-t-lg cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                        onclick="openImageModal('images/dashboard_electromic.png', 'Sistema de Reparaciones Electrónicas')">
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-gray-800 mb-3">Sistema de Reparaciones</h3>
                         <p class="text-gray-600 mb-4 flex-grow">
-                            Desarrollé un sistema web completo para gestión de clientes y seguimiento de reparaciones electrónicas. 
+                            Desarrollé un sistema web completo para gestión de clientes y seguimiento de reparaciones
+                            electrónicas.
                             Implementé CRUD completo, dashboard administrativo y sistema de estados para reparaciones.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Java</span>
-                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
-                            <span class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Hibernate</span>
-                            <span class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Postman</span>
+                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Spring
+                                Boot</span>
+                            <span
+                                class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Hibernate</span>
+                            <span
+                                class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            <span
+                                class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Postman</span>
                         </div>
                         <div class="flex space-x-3 mt-auto">
-                            <a href="https://github.com/Hectorlag/Sistema_electromic" target="_blank" class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
+                            <a href="https://github.com/Hectorlag/Sistema_electromic" target="_blank"
+                                class="flex-1 bg-gray-800 text-white text-center py-2 rounded-lg hover:bg-gray-900 transition duration-300">
                                 <i class="fab fa-github mr-2"></i>Código
                             </a>
-                            <button onclick="showElectromicDemo()" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300">
+                            <button onclick="showElectromicDemo()"
+                                class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300">
                                 <i class="fas fa-play mr-2"></i>Demo
                             </button>
                         </div>
@@ -320,12 +518,23 @@
                     </div>
                     <div class="space-y-3">
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Java SE/EE</span>
-                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Spring Boot</span>
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Spring Security</span>
-                            <span class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Hibernate/JPA</span>
-                            <span class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Spring MVC</span>
-                            <span class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">APIs RESTful</span>
+                            <span
+                                class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Java
+                                SE/EE</span>
+                            <span
+                                class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Spring
+                                Boot</span>
+                            <span
+                                class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Spring
+                                Security</span>
+                            <span
+                                class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Hibernate/JPA</span>
+                            <span
+                                class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Spring
+                                MVC</span>
+                            <span
+                                class="tech-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">APIs
+                                RESTful</span>
                         </div>
                     </div>
                 </div>
@@ -337,12 +546,18 @@
                     </div>
                     <div class="space-y-3">
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">MySQL</span>
-                            <span class="tech-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">SQL</span>
-                            <span class="tech-badge bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Git/GitHub</span>
-                            <span class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Maven</span>
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Docker</span>
-                            <span class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Postman</span>
+                            <span
+                                class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">MySQL</span>
+                            <span
+                                class="tech-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">SQL</span>
+                            <span
+                                class="tech-badge bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Git/GitHub</span>
+                            <span
+                                class="tech-badge bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Maven</span>
+                            <span
+                                class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Docker</span>
+                            <span
+                                class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Postman</span>
                         </div>
                     </div>
                 </div>
@@ -354,12 +569,21 @@
                     </div>
                     <div class="space-y-3">
                         <div class="flex flex-wrap gap-2">
-                            <span class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Scrum</span>
-                            <span class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">IntelliJ IDEA</span>
-                            <span class="tech-badge bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Visual Studio Code</span>
-                            <span class="tech-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">NetBeans</span>
-                            <span class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Eclipse</span>
-                            <span class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Metodologías Ágiles</span>
+                            <span
+                                class="tech-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Scrum</span>
+                            <span
+                                class="tech-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">IntelliJ
+                                IDEA</span>
+                            <span
+                                class="tech-badge bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Visual
+                                Studio Code</span>
+                            <span
+                                class="tech-badge bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">NetBeans</span>
+                            <span
+                                class="tech-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Eclipse</span>
+                            <span
+                                class="tech-badge bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium hover:scale-110 hover:-translate-y-1 transition-all duration-300 cursor-pointer">Metodologías
+                                Ágiles</span>
                         </div>
                     </div>
                 </div>
@@ -384,8 +608,11 @@
                             <div class="flex-1">
                                 <p class="font-semibold">Email</p>
                                 <div class="flex items-center space-x-3">
-                                    <a href="mailto:hectorvlaguna@gmail.com" class="text-gray-600 hover:text-blue-600 transition duration-300">hectorvlaguna@gmail.com</a>
-                                    <button onclick="copyEmail()" class="text-gray-400 hover:text-blue-600 transition duration-300 opacity-0 group-hover:opacity-100" title="Copiar email">
+                                    <a href="mailto:hectorvlaguna@gmail.com"
+                                        class="text-gray-600 hover:text-blue-600 transition duration-300">hectorvlaguna@gmail.com</a>
+                                    <button onclick="copyEmail()"
+                                        class="text-gray-400 hover:text-blue-600 transition duration-300 opacity-0 group-hover:opacity-100"
+                                        title="Copiar email">
                                         <i class="fas fa-copy text-sm"></i>
                                     </button>
                                 </div>
@@ -402,10 +629,12 @@
                     <div class="mt-8">
                         <h4 class="text-lg font-semibold text-gray-800 mb-4">Sígueme en:</h4>
                         <div class="flex space-x-4">
-                            <a href="https://github.com/Hectorlag" target="_blank" class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition duration-300">
+                            <a href="https://github.com/Hectorlag" target="_blank"
+                                class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition duration-300">
                                 <i class="fab fa-github text-xl"></i>
                             </a>
-                            <a href="https://linkedin.com/in/hectorlaguna24/" target="_blank" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                            <a href="https://linkedin.com/in/hectorlaguna24/" target="_blank"
+                                class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </a>
                         </div>
@@ -415,21 +644,26 @@
                     <form id="contact-form" action="https://formspree.io/f/mblyzrow" method="POST" class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                         </div>
                         <div>
                             <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Asunto</label>
-                            <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            <input type="text" id="subject" name="subject"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
                         </div>
-                        <button type="submit" id="submit-btn" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                        <button type="submit" id="submit-btn"
+                            class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
                             Enviar Mensaje
                         </button>
                     </form>
@@ -449,7 +683,8 @@
     <!-- Image Modal -->
     <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
         <div class="relative max-w-7xl max-h-full p-4">
-            <button onclick="closeImageModal()" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center">
+            <button onclick="closeImageModal()"
+                class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors z-10 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center">
                 <i class="fas fa-times"></i>
             </button>
             <img id="modalImage" src="" alt="" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
@@ -464,26 +699,19 @@
     <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center hidden">
         <div class="relative max-w-6xl max-h-[90vh] mx-4">
             <!-- Botón de cerrar -->
-            <button 
-                onclick="closeVideoModal()" 
+            <button onclick="closeVideoModal()"
                 class="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl z-10 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors duration-200"
-                title="Cerrar video"
-            >
+                title="Cerrar video">
                 <i class="fas fa-times"></i>
             </button>
-            
+
             <!-- Contenedor del video -->
             <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
                 <!-- Video -->
-                <video 
-                    id="modalVideo" 
-                    controls 
-                    class="w-full h-auto max-h-[70vh]"
-                    preload="metadata"
-                >
+                <video id="modalVideo" controls class="w-full h-auto max-h-[70vh]" preload="metadata">
                     Tu navegador no soporta el elemento video.
                 </video>
-                
+
                 <!-- Información del video -->
                 <div class="p-6">
                     <h3 id="modalVideoTitle" class="text-xl font-bold text-gray-900 dark:text-white mb-2"></h3>
@@ -495,4 +723,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
