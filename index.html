@@ -179,18 +179,18 @@
                                             <p class="text-xs text-gray-600 dark:text-gray-300 mb-1">TodoCode Academy •
                                                 Feb 2025</p>
                                             <div class="flex items-center text-xs text-blue-600 dark:text-blue-400">
-                                                <i class="fas fa-mouse-pointer mr-1"></i>
-                                                <span>Ver preview</span>
+                                                <i class="fas fa-file-pdf mr-1"></i>
+                                                <span>Ver certificado PDF</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="flex items-center space-x-1 ml-2">
-                                        <button
-                                            onclick="event.stopPropagation(); window.open('https://todocodeacademy.com/certificate/spring-security-mer/', '_blank')"
+                                        <a href="assets/certificates/certificado-spring-security.pdf" target="_blank"
+                                            onclick="event.stopPropagation()"
                                             class="cert-btn bg-blue-600 text-white p-1.5 rounded hover:bg-blue-700 transition-colors"
-                                            title="Abrir en nueva pestaña">
+                                            title="Ver certificado PDF">
                                             <i class="fas fa-external-link-alt text-xs"></i>
-                                        </button>
+                                        </a>
                                         <i class="fas fa-chevron-down transform transition-transform duration-300 text-sm"
                                             id="chevron-spring-security"></i>
                                     </div>
@@ -201,26 +201,31 @@
                                     class="certificate-preview hidden mt-3 border-t border-blue-200 dark:border-blue-600 pt-3">
                                     <div class="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-inner">
                                         <div class="flex items-center justify-between mb-2">
-                                            <h6 class="font-semibold text-gray-700 dark:text-gray-300 text-sm">Vista
-                                                previa</h6>
+                                            <h6 class="font-semibold text-gray-700 dark:text-gray-300 text-sm">
+                                                Certificado Local</h6>
                                             <span
                                                 class="text-xs text-gray-500 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
-                                                Oficial
+                                                PDF
                                             </span>
                                         </div>
-                                        <iframe src="https://todocodeacademy.com/certificate/spring-security-mer/"
-                                            class="certificate-iframe w-full h-48 rounded"
-                                            title="Certificado Spring Security">
-                                        </iframe>
+                                        <div class="text-center py-4">
+                                            <i class="fas fa-file-pdf text-4xl text-blue-600 mb-3"></i>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                                                Certificado de Spring Security - TodoCode Academy
+                                            </p>
+                                            <a href="assets/certificates/certificado-spring-security.pdf"
+                                                target="_blank"
+                                                class="bg-blue-600 text-white py-2 px-4 rounded text-sm hover:bg-blue-700 transition-colors">
+                                                <i class="fas fa-download mr-2"></i>Abrir PDF
+                                            </a>
+                                        </div>
                                         <div class="mt-2 flex justify-between items-center text-xs">
                                             <span class="text-gray-600 dark:text-gray-400">
                                                 <i class="fas fa-calendar mr-1"></i>Feb 2025
                                             </span>
-                                            <button
-                                                onclick="copyToClipboard('https://todocodeacademy.com/certificate/spring-security-mer/')"
-                                                class="text-blue-600 hover:text-blue-800">
-                                                <i class="fas fa-copy mr-1"></i>Copiar
-                                            </button>
+                                            <span class="text-green-600">
+                                                <i class="fas fa-check mr-1"></i>Local
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -240,24 +245,24 @@
                                                 <h5 class="font-bold text-gray-800 dark:text-white text-sm">Spring Boot
                                                 </h5>
                                                 <span class="status-badge status-chrome-optimized text-xs">
-                                                    <i class="fas fa-chrome"></i>Chrome
+                                                    <i class="fas fa-file-pdf"></i>PDF
                                                 </span>
                                             </div>
                                             <p class="text-xs text-gray-600 dark:text-gray-300 mb-1">TodoCode Academy •
                                                 2023</p>
                                             <div class="flex items-center text-xs text-orange-600 dark:text-orange-400">
-                                                <i class="fas fa-mouse-pointer mr-1"></i>
-                                                <span>Ver preview</span>
+                                                <i class="fas fa-file-pdf mr-1"></i>
+                                                <span>Ver certificado PDF</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="flex items-center space-x-1 ml-2">
-                                        <button
-                                            onclick="event.stopPropagation(); handleCertificateClick('spring-boot', event)"
+                                        <a href="assets/certificates/certificado-spring-boot.pdf" target="_blank"
+                                            onclick="event.stopPropagation()"
                                             class="cert-btn bg-orange-600 text-white p-1.5 rounded hover:bg-orange-700 transition-colors"
-                                            title="Ver certificado">
+                                            title="Ver certificado PDF">
                                             <i class="fas fa-eye text-xs"></i>
-                                        </button>
+                                        </a>
                                         <i class="fas fa-chevron-down transform transition-transform duration-300 text-sm"
                                             id="chevron-spring-boot"></i>
                                     </div>
@@ -283,10 +288,11 @@
                                                 </ul>
                                             </div>
                                             <div class="space-y-2">
-                                                <button onclick="handleCertificateClick('spring-boot', event)"
-                                                    class="w-full bg-orange-600 text-white py-2 px-3 rounded text-xs hover:bg-orange-700 transition-colors">
-                                                    <i class="fas fa-external-link-alt mr-2"></i>Ver certificado
-                                                </button>
+                                                <a href="assets/certificates/certificado-spring-boot.pdf"
+                                                    target="_blank"
+                                                    class="block w-full bg-orange-600 text-white py-2 px-3 rounded text-xs hover:bg-orange-700 transition-colors text-center">
+                                                    <i class="fas fa-external-link-alt mr-2"></i>Ver certificado PDF
+                                                </a>
                                                 <button
                                                     onclick="window.open('https://todocodeacademy.com/cursos/', '_blank')"
                                                     class="w-full bg-gray-600 text-white py-2 px-3 rounded text-xs hover:bg-gray-700 transition-colors">
@@ -318,18 +324,18 @@
                                             <p class="text-xs text-gray-600 dark:text-gray-300 mb-1">TodoCode Academy •
                                                 2024</p>
                                             <div class="flex items-center text-xs text-green-600 dark:text-green-400">
-                                                <i class="fas fa-mouse-pointer mr-1"></i>
-                                                <span>Ver preview</span>
+                                                <i class="fas fa-file-pdf mr-1"></i>
+                                                <span>Ver certificado PDF</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="flex items-center space-x-1 ml-2">
-                                        <button
-                                            onclick="event.stopPropagation(); handleCertificateClick('microservices', event)"
+                                        <a href="assets/certificates/certificado-microservicios.pdf" target="_blank"
+                                            onclick="event.stopPropagation()"
                                             class="cert-btn bg-green-600 text-white p-1.5 rounded hover:bg-green-700 transition-colors"
-                                            title="Ver certificado">
+                                            title="Ver certificado PDF">
                                             <i class="fas fa-eye text-xs"></i>
-                                        </button>
+                                        </a>
                                         <i class="fas fa-chevron-down transform transition-transform duration-300 text-sm"
                                             id="chevron-microservices"></i>
                                     </div>
@@ -347,12 +353,13 @@
                                                 Sistemas distribuidos y escalables
                                             </p>
                                             <div class="flex justify-center space-x-2">
-                                                <button onclick="handleCertificateClick('microservices', event)"
+                                                <a href="assets/certificates/certificado-microservicios.pdf"
+                                                    target="_blank"
                                                     class="bg-green-600 text-white py-1.5 px-3 rounded text-xs hover:bg-green-700 transition-colors">
-                                                    <i class="fas fa-external-link-alt mr-1"></i>Ver
-                                                </button>
+                                                    <i class="fas fa-external-link-alt mr-1"></i>Ver PDF
+                                                </a>
                                                 <button
-                                                    onclick="copyToClipboard('https://todocodeacademy.com/certificate/v9o/')"
+                                                    onclick="navigator.clipboard.writeText(window.location.origin + '/assets/certificates/certificado-microservicios.pdf')"
                                                     class="bg-gray-600 text-white py-1.5 px-3 rounded text-xs hover:bg-gray-700 transition-colors">
                                                     <i class="fas fa-copy mr-1"></i>Copiar
                                                 </button>
@@ -372,6 +379,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
