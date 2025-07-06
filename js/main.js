@@ -647,6 +647,158 @@ function initCertificateSystem() {
         }, 3000); // Después de 3 segundos de cargar la página
     }
 }
+// =====================================
+// DESCARGA DIRECTA DE CV - SENIOR LEVEL
+// =====================================
+
+/**
+ * Descarga forzada del CV sin redirección
+ * Maneja errores y da feedback al usuario
+ */
+async function downloadCVDirectly() {
+    const cvPath = 'assets/Cv_HéctorLaguna.pdf';
+    const fileName = 'CV_Hector_Laguna.pdf';
+    
+    try {
+        // Mostrar loading
+        showToast('Preparando descarga...', 'info');
+        
+        // Fetch del archivo como blob
+        const response = await fetch(cvPath);
+        
+        if (!response.ok) {
+            throw new Error(`Error HTTP: ${response.status}`);
+        }
+        
+        // Convertir a blob
+        const blob = await response.blob();
+        
+        // Crear URL temporal del blob
+        const blobUrl = window.URL.createObjectURL(blob);
+        
+        // Crear enlace temporal para descarga forzada
+        const downloadLink = document.createElement('a');
+        downloadLink.href = blobUrl;
+        downloadLink.download = fileName;
+        downloadLink.style.display = 'none';
+        
+        // Agregar al DOM, hacer click, y remover
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        
+        // Limpiar URL temporal después de un delay
+        setTimeout(() => {
+            window.URL.revokeObjectURL(blobUrl);
+        }, 100);
+        
+        // Feedback de éxito
+        showToast('CV descargado exitosamente! 📄', 'success');
+        
+        // Analytics tracking (opcional)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'download', {
+                'event_category': 'CV',
+                'event_label': 'Direct_Download',
+                'value': 1
+            });
+        }
+        
+    } catch (error) {
+        console.error('Error descargando CV:', error);
+        
+        // Fallback: abrir en nueva pestaña si falla la descarga
+        showToast('Error en descarga, abriendo CV...', 'error');
+        window.open(cvPath, '_blank');
+        
+        // Analytics tracking del error
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'download_error', {
+                'event_category': 'CV',
+                'event_label': error.message
+            });
+        }
+    }
+}
+
+/**
+ * Versión alternativa usando createObjectURL directo
+ * Para casos donde fetch pueda fallar
+ */
+function downloadCVFallback() {
+    const cvPath = 'assets/Cv_HéctorLaguna.pdf';
+    const fileName = 'CV_Hector_Laguna.pdf';
+    
+    try {
+        showToast('Iniciando descarga...', 'info');
+        
+        // Crear enlace invisible con download forzado
+        const link = document.createElement('a');
+        link.href = cvPath;
+        link.download = fileName;
+        link.target = '_self'; // Forzar mismo tab
+        
+        // Agregar headers para forzar descarga
+        link.setAttribute('rel', 'noopener');
+        link.style.display = 'none';
+        
+        document.body.appendChild(link);
+        
+        // Trigger click programático
+        link.click();
+        
+        // Cleanup
+        setTimeout(() => {
+            document.body.removeChild(link);
+        }, 100);
+        
+        showToast('Descarga iniciada! 📥', 'success');
+        
+    } catch (error) {
+        console.error('Fallback download failed:', error);
+        showToast('Error en descarga', 'error');
+    }
+}
+
+/**
+ * Función híbrida que combina ambas estrategias
+ * Primero intenta blob, luego fallback
+ */
+async function downloadCVHybrid() {
+    // Detectar si el navegador soporta fetch y blob
+    if (window.fetch && window.URL && window.URL.createObjectURL) {
+        await downloadCVDirectly();
+    } else {
+        // Fallback para navegadores antiguos
+        downloadCVFallback();
+    }
+}
+
+/**
+ * Versión más robusta con detección de dispositivo
+ */
+function downloadCVSmart() {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    
+    if (isIOS) {
+        // iOS tiene limitaciones especiales
+        showToast('En iOS, se abrirá el CV para guardar manualmente', 'info');
+        window.open('assets/Cv_HéctorLaguna.pdf', '_blank');
+    } else if (isMobile) {
+        // Android y otros móviles
+        downloadCVHybrid();
+    } else {
+        // Desktop - método más robusto
+        downloadCVDirectly();
+    }
+}
+
+// Exponer funciones globalmente
+window.downloadCVDirectly = downloadCVDirectly;
+window.downloadCVFallback = downloadCVFallback;
+window.downloadCVHybrid = downloadCVHybrid;
+window.downloadCVSmart = downloadCVSmart;
 
 // Make functions global
 window.openImageModal = openImageModal;
