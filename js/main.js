@@ -656,8 +656,8 @@ function initCertificateSystem() {
  * Maneja errores y da feedback al usuario
  */
 async function downloadCVDirectly() {
-    const cvPath = 'assets/Cv_HéctorLaguna.pdf';
-    const fileName = 'CV_Hector_Laguna.pdf';
+    const cvPath = 'assets/Hector_Laguna_CV.pdf';
+    const fileName = 'Hector_Laguna_CV.pdf';
     
     try {
         // Mostrar loading
@@ -726,8 +726,8 @@ async function downloadCVDirectly() {
  * Para casos donde fetch pueda fallar
  */
 function downloadCVFallback() {
-    const cvPath = 'assets/Cv_HéctorLaguna.pdf';
-    const fileName = 'CV_Hector_Laguna.pdf';
+    const cvPath = 'assets/Hector_Laguna_CV.pdf';
+    const fileName = 'Hector_Laguna_CV.pdf';
     
     try {
         showToast('Iniciando descarga...', 'info');
@@ -784,7 +784,7 @@ function downloadCVSmart() {
     if (isIOS) {
         // iOS tiene limitaciones especiales
         showToast('En iOS, se abrirá el CV para guardar manualmente', 'info');
-        window.open('assets/Cv_HéctorLaguna.pdf', '_blank');
+        window.open('assets/Hector_Laguna_CV.pdf', '_blank');
     } else if (isMobile) {
         // Android y otros móviles
         downloadCVHybrid();
