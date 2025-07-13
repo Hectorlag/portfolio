@@ -1,9 +1,163 @@
 /* Portfolio Styles - Héctor Laguna */
 
-/* Custom Gradient Background */
-.gradient-bg {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+/* =====================================
+   MODO OSCURO POR DEFECTO - ESTILOS BASE
+   ===================================== */
+
+/* Body por defecto en modo oscuro */
+body {
+    background-color: #1a202c;
+    color: #f7fafc;
+    transition: all 0.3s ease;
 }
+
+/* Navigation en modo oscuro por defecto */
+nav {
+    background-color: #2d3748 !important;
+}
+
+/* Cards y elementos por defecto en modo oscuro */
+.bg-white {
+    background-color: #2d3748 !important;
+}
+
+.bg-gray-50 {
+    background-color: #1a202c !important;
+}
+
+.text-gray-800 {
+    color: #f7fafc !important;
+}
+
+.text-gray-600 {
+    color: #e2e8f0 !important;
+}
+
+.text-gray-700 {
+    color: #e2e8f0 !important;
+}
+
+.text-gray-500 {
+    color: #a0aec0 !important;
+}
+
+.text-gray-400 {
+    color: #a0aec0 !important;
+}
+
+.border-gray-200,
+.border-gray-300,
+.border-gray-100 {
+    border-color: #4a5568 !important;
+}
+
+input,
+textarea {
+    background-color: #4a5568 !important;
+    border-color: #718096 !important;
+    color: #f7fafc !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #63b3ed !important;
+}
+
+label {
+    color: #e2e8f0 !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+}
+
+footer {
+    background-color: #1a202c !important;
+}
+
+/* Custom Gradient Background - Dark version */
+.gradient-bg {
+    background: linear-gradient(135deg, #2b6cb0 0%, #553c9a 100%);
+}
+
+/* =====================================
+   MODO CLARO - Solo cuando se activa
+   ===================================== */
+
+body.light {
+    background-color: #ffffff;
+    color: #1a202c;
+}
+
+body.light nav {
+    background-color: #ffffff !important;
+}
+
+body.light .bg-white {
+    background-color: #ffffff !important;
+}
+
+body.light .bg-gray-50 {
+    background-color: #f9fafb !important;
+}
+
+body.light .text-gray-800 {
+    color: #1f2937 !important;
+}
+
+body.light .text-gray-600 {
+    color: #4b5563 !important;
+}
+
+body.light .text-gray-700 {
+    color: #374151 !important;
+}
+
+body.light .text-gray-500 {
+    color: #6b7280 !important;
+}
+
+body.light .text-gray-400 {
+    color: #9ca3af !important;
+}
+
+body.light .border-gray-200,
+body.light .border-gray-300,
+body.light .border-gray-100 {
+    border-color: #e5e7eb !important;
+}
+
+body.light input,
+body.light textarea {
+    background-color: #ffffff !important;
+    border-color: #d1d5db !important;
+    color: #1f2937 !important;
+}
+
+body.light input:focus,
+body.light textarea:focus {
+    border-color: #3b82f6 !important;
+}
+
+body.light label {
+    color: #374151 !important;
+}
+
+body.light .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light footer {
+    background-color: #374151 !important;
+}
+
+body.light .gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* =====================================
+   ESTILOS COMUNES - MANTIENEN SU LÓGICA
+   ===================================== */
 
 /* Technology Badge Styles */
 .tech-badge {
@@ -76,13 +230,16 @@
     animation: javaPulse 3s ease-in-out infinite;
 }
 
-/* Dark Mode Toggle */
+/* =====================================
+   DARK MODE TOGGLE - ACTUALIZADO
+   ===================================== */
+
 .dark-mode-toggle {
     position: fixed;
     top: 10px;
     right: 25px;
     z-index: 1000;
-    background: #4f46e5;
+    background: #ed8936; /* Naranja para modo oscuro por defecto */
     color: white;
     border: none;
     border-radius: 50%;
@@ -97,7 +254,7 @@
 }
 
 .dark-mode-toggle:hover {
-    background: #3730a3;
+    background: #dd6b20;
     transform: scale(1.1);
 }
 
@@ -105,91 +262,20 @@
     font-size: 18px;
 }
 
-/* Dark Mode Styles - Simple */
-.dark {
-    background-color: #1a202c !important;
-    color: #f7fafc !important;
+/* Modo claro - botón azul */
+body.light .dark-mode-toggle {
+    background: #4f46e5 !important;
 }
 
-.dark nav {
-    background-color: #2d3748 !important;
-}
-
-.dark .bg-white {
-    background-color: #2d3748 !important;
-}
-
-.dark .bg-gray-50 {
-    background-color: #1a202c !important;
-}
-
-.dark .text-gray-800 {
-    color: #f7fafc !important;
-}
-
-.dark .text-gray-600 {
-    color: #e2e8f0 !important;
-}
-
-.dark .text-gray-700 {
-    color: #e2e8f0 !important;
-}
-
-.dark .text-gray-500 {
-    color: #a0aec0 !important;
-}
-
-.dark .text-gray-400 {
-    color: #a0aec0 !important;
-}
-
-.dark .border-gray-200,
-.dark .border-gray-300,
-.dark .border-gray-100 {
-    border-color: #4a5568 !important;
-}
-
-.dark input,
-.dark textarea {
-    background-color: #4a5568 !important;
-    border-color: #718096 !important;
-    color: #f7fafc !important;
-}
-
-.dark input:focus,
-.dark textarea:focus {
-    border-color: #63b3ed !important;
-}
-
-.dark label {
-    color: #e2e8f0 !important;
-}
-
-.dark .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
-}
-
-.dark footer {
-    background-color: #1a202c !important;
-}
-
-.dark .gradient-bg {
-    background: linear-gradient(135deg, #2b6cb0 0%, #553c9a 100%) !important;
-}
-
-.dark .dark-mode-toggle {
-    background: #ed8936 !important;
-}
-
-.dark .dark-mode-toggle:hover {
-    background: #dd6b20 !important;
+body.light .dark-mode-toggle:hover {
+    background: #3730a3 !important;
 }
 
 @media (max-width: 768px) {
     .dark-mode-toggle {
-        top: 15px;        /* Dentro del navbar blanco */
-        right: 60px;      /* Al lado del hamburguesa */
-        width: 30px;      /* Más pequeño para no competir */
+        top: 15px;
+        right: 60px;
+        width: 30px;
         height: 30px;
         z-index: 1001;
     }
@@ -257,35 +343,36 @@
     gap: 0.25rem;
 }
 
+/* Certificate Status Badges - Modo oscuro por defecto */
 .status-verified {
-    background-color: #dcfce7;
-    color: #166534;
-}
-
-.status-chrome-optimized {
-    background-color: #dbeafe;
-    color: #1e40af;
-}
-
-.status-advanced {
-    background-color: #f3e8ff;
-    color: #7c3aed;
-}
-
-/* Dark mode certificate styles */
-.dark .status-verified {
     background-color: #166534;
     color: #dcfce7;
 }
 
-.dark .status-chrome-optimized {
+.status-chrome-optimized {
     background-color: #1e40af;
     color: #dbeafe;
 }
 
-.dark .status-advanced {
+.status-advanced {
     background-color: #7c3aed;
     color: #f3e8ff;
+}
+
+/* Certificate Status Badges - Modo claro */
+body.light .status-verified {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+body.light .status-chrome-optimized {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+body.light .status-advanced {
+    background-color: #f3e8ff;
+    color: #7c3aed;
 }
 
 /* Certificate Icons */
@@ -310,23 +397,24 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Iframe Styles */
+/* Iframe Styles - Modo oscuro por defecto */
 .certificate-iframe {
-    border: 2px solid #e5e7eb;
+    border: 2px solid #4b5563;
     border-radius: 0.5rem;
     transition: border-color 0.3s ease;
 }
 
 .certificate-iframe:hover {
-    border-color: #3b82f6;
-}
-
-.dark .certificate-iframe {
-    border-color: #4b5563;
-}
-
-.dark .certificate-iframe:hover {
     border-color: #60a5fa;
+}
+
+/* Iframe Styles - Modo claro */
+body.light .certificate-iframe {
+    border-color: #e5e7eb;
+}
+
+body.light .certificate-iframe:hover {
+    border-color: #3b82f6;
 }
 
 /* Responsive Certificates */
@@ -350,9 +438,9 @@
     }
 }
 
-/* Loading States */
+/* Loading States - Modo oscuro por defecto */
 .loading-shimmer {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
     background-size: 200% 100%;
     animation: shimmer 1.5s infinite;
 }
@@ -366,7 +454,359 @@
     }
 }
 
-.dark .loading-shimmer {
-    background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+/* Loading States - Modo claro */
+body.light .loading-shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
     background-size: 200% 100%;
+}
+
+/* =====================================
+   FIX PARA BADGES DE TECNOLOGÍAS - CONTRASTE MEJORADO
+   ===================================== */
+
+/* Technology Badges - Estilos base mejorados */
+.tech-badge {
+    transition: all 0.3s ease;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    border: 1px solid transparent;
+}
+
+/* =====================================
+   MODO OSCURO - Colores más brillantes y visibles
+   ===================================== */
+
+/* Rojos - Java, Maven */
+.bg-red-100 {
+    background-color: #dc2626 !important;
+    color: #ffffff !important;
+    border-color: #ef4444 !important;
+}
+
+/* Verdes - Spring Boot, Spring Framework, Scrum */
+.bg-green-100 {
+    background-color: #059669 !important;
+    color: #ffffff !important;
+    border-color: #10b981 !important;
+}
+
+/* Azules - Spring Security, Spring Data JPA, Postman, Docker, IntelliJ */
+.bg-blue-100 {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border-color: #3b82f6 !important;
+}
+
+/* Amarillos/Naranjas - MySQL, APIs RESTful */
+.bg-yellow-100 {
+    background-color: #d97706 !important;
+    color: #ffffff !important;
+    border-color: #f59e0b !important;
+}
+
+/* Naranjas - Hibernate/JPA */
+.bg-orange-100 {
+    background-color: #ea580c !important;
+    color: #ffffff !important;
+    border-color: #f97316 !important;
+}
+
+/* Púrpuras - Spring MVC, Eclipse, Tailwind CSS */
+.bg-purple-100 {
+    background-color: #7c3aed !important;
+    color: #ffffff !important;
+    border-color: #8b5cf6 !important;
+}
+
+/* Índigos - Spring Data JPA, NetBeans */
+.bg-indigo-100 {
+    background-color: #4338ca !important;
+    color: #ffffff !important;
+    border-color: #6366f1 !important;
+}
+
+/* Cianes - Visual Studio Code */
+.bg-cyan-100 {
+    background-color: #0891b2 !important;
+    color: #ffffff !important;
+    border-color: #06b6d4 !important;
+}
+
+/* Grises - Git/GitHub */
+.bg-gray-100 {
+    background-color: #374151 !important;
+    color: #ffffff !important;
+    border-color: #6b7280 !important;
+}
+
+/* =====================================
+   MODO CLARO - Restaurar colores originales
+   ===================================== */
+
+body.light .bg-red-100 {
+    background-color: #fef2f2 !important;
+    color: #dc2626 !important;
+    border-color: #fecaca !important;
+}
+
+body.light .bg-green-100 {
+    background-color: #f0fdf4 !important;
+    color: #166534 !important;
+    border-color: #bbf7d0 !important;
+}
+
+body.light .bg-blue-100 {
+    background-color: #dbeafe !important;
+    color: #1e40af !important;
+    border-color: #93c5fd !important;
+}
+
+body.light .bg-yellow-100 {
+    background-color: #fefce8 !important;
+    color: #a16207 !important;
+    border-color: #fde047 !important;
+}
+
+body.light .bg-orange-100 {
+    background-color: #fff7ed !important;
+    color: #c2410c !important;
+    border-color: #fed7aa !important;
+}
+
+body.light .bg-purple-100 {
+    background-color: #f3e8ff !important;
+    color: #7c2d12 !important;
+    border-color: #d8b4fe !important;
+}
+
+body.light .bg-indigo-100 {
+    background-color: #eef2ff !important;
+    color: #3730a3 !important;
+    border-color: #c7d2fe !important;
+}
+
+body.light .bg-cyan-100 {
+    background-color: #cffafe !important;
+    color: #164e63 !important;
+    border-color: #67e8f9 !important;
+}
+
+body.light .bg-gray-100 {
+    background-color: #f3f4f6 !important;
+    color: #374151 !important;
+    border-color: #d1d5db !important;
+}
+
+/* =====================================
+   HOVER EFFECTS MEJORADOS
+   ===================================== */
+
+.tech-badge:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border-color: #ffffff !important;
+}
+
+body.light .tech-badge:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #000000 !important;
+}
+
+/* =====================================
+   TEXT COLORS ESPECÍFICOS PARA MEJOR LEGIBILIDAD
+   ===================================== */
+
+/* Asegurar que todos los textos sean legibles */
+.tech-badge .text-red-800,
+.tech-badge .text-green-800,
+.tech-badge .text-blue-800,
+.tech-badge .text-yellow-800,
+.tech-badge .text-orange-800,
+.tech-badge .text-purple-800,
+.tech-badge .text-indigo-800,
+.tech-badge .text-cyan-800,
+.tech-badge .text-gray-800 {
+    color: #ffffff !important;
+}
+
+/* Modo claro - restaurar colores de texto */
+body.light .tech-badge .text-red-800 {
+    color: #991b1b !important;
+}
+
+body.light .tech-badge .text-green-800 {
+    color: #166534 !important;
+}
+
+body.light .tech-badge .text-blue-800 {
+    color: #1e40af !important;
+}
+
+body.light .tech-badge .text-yellow-800 {
+    color: #a16207 !important;
+}
+
+body.light .tech-badge .text-orange-800 {
+    color: #c2410c !important;
+}
+
+body.light .tech-badge .text-purple-800 {
+    color: #6b21a8 !important;
+}
+
+body.light .tech-badge .text-indigo-800 {
+    color: #3730a3 !important;
+}
+
+body.light .tech-badge .text-cyan-800 {
+    color: #164e63 !important;
+}
+
+body.light .tech-badge .text-gray-800 {
+    color: #1f2937 !important;
+}
+
+/* =====================================
+   SOLUCIÓN FRONTEND DIRECTA - SELECTORES ESPECÍFICOS PARA CERTIFICACIONES
+   ===================================== */
+
+/* FUERZA BRUTA - TODOS LOS TEXTOS EN CERTIFICACIONES */
+
+/* Títulos específicos de cada certificado (Spring Security, etc.) */
+.certificate-card h5.font-bold.text-gray-800,
+.certificate-card .font-bold.text-gray-800,
+.certificate-card h5,
+.certificate-card .font-bold {
+    color: #111827 !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Información de academia (TodoCode Academy • Feb 2025) */
+.certificate-card p.text-xs.text-gray-600,
+.certificate-card .text-xs.text-gray-600,
+.certificate-card p.text-xs,
+.certificate-card .text-xs {
+    color: #111827 !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+}
+
+/* Enlaces "Ver certificado PDF" por color específico */
+.certificate-card .text-blue-600,
+.certificate-card [class*="text-blue"] {
+    color: #60a5fa !important;
+    font-weight: 600 !important;
+}
+
+.certificate-card .text-orange-600,
+.certificate-card [class*="text-orange"] {
+    color: #fb923c !important;
+    font-weight: 600 !important;
+}
+
+.certificate-card .text-green-600,
+.certificate-card [class*="text-green"] {
+    color: #4ade80 !important;
+    font-weight: 600 !important;
+}
+
+/* Fuerza todos los spans y divs de texto */
+.certificate-card span,
+.certificate-card p,
+.certificate-card div.flex span {
+    color: #e5e7eb !important;
+    font-weight: 500 !important;
+}
+
+/* Título de la sección completa */
+h4.text-2xl.font-semibold.text-gray-800.mb-6 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Override específico para clases dark: que no funcionan */
+.certificate-card .dark\:text-white,
+.certificate-card .dark\:text-gray-300,
+.certificate-card .dark\:text-gray-400,
+.certificate-card .dark\:text-blue-400,
+.certificate-card .dark\:text-orange-400,
+.certificate-card .dark\:text-green-400 {
+    color: #ffffff !important;
+}
+
+/* Footer "Certificaciones validadas y verificables" */
+p.text-sm.text-gray-500.text-center {
+    color: #d1d5db !important;
+    font-weight: 500 !important;
+}
+
+/* =====================================
+   MÉTODO NUCLEAR - SI NADA MÁS FUNCIONA
+   ===================================== */
+
+/* Seleccionar TODOS los elementos de texto en la columna derecha */
+.fade-in:last-child * {
+    color: #ffffff !important;
+}
+
+/* Excepto los badges que ya funcionan */
+.fade-in:last-child .status-badge,
+.fade-in:last-child .status-badge * {
+    color: inherit !important;
+}
+
+/* Excepto los botones */
+.fade-in:last-child button,
+.fade-in:last-child button *,
+.fade-in:last-child a.cert-btn,
+.fade-in:last-child a.cert-btn * {
+    color: inherit !important;
+}
+
+/* =====================================
+   MODO CLARO - RESTAURAR CERTIFICACIONES
+   ===================================== */
+
+body.light .certificate-card h5.font-bold.text-gray-800,
+body.light .certificate-card .font-bold.text-gray-800,
+body.light .certificate-card h5,
+body.light .certificate-card .font-bold {
+    color: #1f2937 !important;
+}
+
+body.light .certificate-card p.text-xs.text-gray-600,
+body.light .certificate-card .text-xs.text-gray-600,
+body.light .certificate-card p.text-xs,
+body.light .certificate-card .text-xs {
+    color: #4b5563 !important;
+}
+
+body.light .certificate-card .text-blue-600,
+body.light .certificate-card [class*="text-blue"] {
+    color: #2563eb !important;
+}
+
+body.light .certificate-card .text-orange-600,
+body.light .certificate-card [class*="text-orange"] {
+    color: #ea580c !important;
+}
+
+body.light .certificate-card .text-green-600,
+body.light .certificate-card [class*="text-green"] {
+    color: #16a34a !important;
+}
+
+body.light h4.text-2xl.font-semibold.text-gray-800.mb-6 {
+    color: #1f2937 !important;
+}
+
+body.light p.text-sm.text-gray-500.text-center {
+    color: #6b7280 !important;
+}
+
+body.light .fade-in:last-child * {
+    color: inherit !important;
 }

@@ -187,48 +187,48 @@ window.addEventListener('load', function() {
     }, 1000);
 });
 
-// Dark Mode Functionality - Simple
+// Dark Mode Functionality - Modo oscuro por defecto
 function initDarkMode() {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const darkModeIcon = document.getElementById('darkModeIcon');
     const body = document.body;
 
-    // Check for saved theme preference or default to light mode
+    // Check for saved theme preference or default to DARK mode
     const savedTheme = localStorage.getItem('theme');
     
-    // Apply initial theme
-    if (savedTheme === 'dark') {
-        enableDarkMode();
-    } else {
+    // Apply initial theme - DARK by default
+    if (savedTheme === 'light') {
         enableLightMode();
+    } else {
+        // Default to dark mode if no preference or if preference is dark
+        enableDarkMode();
     }
 
-    // Toggle dark mode on button click
+    // Toggle theme on button click
     darkModeToggle.addEventListener('click', () => {
-        if (body.classList.contains('dark')) {
-            enableLightMode();
-            localStorage.setItem('theme', 'light');
-            showToast('Modo claro activado', 'info');
-        } else {
+        if (body.classList.contains('light')) {
             enableDarkMode();
             localStorage.setItem('theme', 'dark');
             showToast('Modo oscuro activado', 'info');
+        } else {
+            enableLightMode();
+            localStorage.setItem('theme', 'light');
+            showToast('Modo claro activado', 'info');
         }
     });
 
     function enableDarkMode() {
-        body.classList.add('dark');
+        body.classList.remove('light');
         darkModeIcon.className = 'fas fa-sun';
         darkModeToggle.title = 'Cambiar a modo claro';
     }
 
     function enableLightMode() {
-        body.classList.remove('dark');
+        body.classList.add('light');
         darkModeIcon.className = 'fas fa-moon';
         darkModeToggle.title = 'Cambiar a modo oscuro';
     }
 }
-
 // Initialize dark mode when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initDarkMode();
