@@ -385,8 +385,8 @@ document.addEventListener('keydown', function (e) {
 // =====================================
 
 async function downloadCVDirectly() {
-    const cvPath = 'assets/Hector_Laguna_CV.pdf';
-    const fileName = 'Hector_Laguna_CV.pdf';
+    const cvPath = 'assets/LagunaHector_Java.pdf';
+    const fileName = 'LagunaHector_Java.pdf';
 
     try {
         showToast('Preparando descarga...', 'info');
@@ -410,11 +410,11 @@ async function downloadCVDirectly() {
 }
 
 function downloadCVFallback() {
-    const cvPath = 'assets/Hector_Laguna_CV.pdf';
+    const cvPath = 'assets/LagunaHector_Java.pdf';
     showToast('Iniciando descarga...', 'info');
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'Hector_Laguna_CV.pdf';
+    link.download = 'LagunaHector_Java.pdf';
     link.style.display = 'none';
     document.body.appendChild(link);
     link.click();
@@ -436,7 +436,7 @@ function downloadCVSmart() {
 
     if (isIOS) {
         showToast('En iOS, se abrirá el CV para guardar manualmente', 'info');
-        window.open('assets/Hector_Laguna_CV.pdf', '_blank');
+        window.open('assets/LagunaHector_Java.pdf', '_blank');
     } else if (isMobile) {
         downloadCVHybrid();
     } else {
